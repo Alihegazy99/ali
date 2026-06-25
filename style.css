@@ -124,7 +124,7 @@ linear-gradient(
 @media(max-width:768px){
 
     .navbar{
-        display:none;
+        display:flex;
     }
 
     .menu-btn{
@@ -468,8 +468,22 @@ transform:translateY(0);
 @media(max-width:768px){
 
     .hero-content{
-        padding:25px;
-    }
+
+    max-width:800px;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:20px;
+
+}
 
     .hero-content h1{
         font-size:28px;
@@ -483,16 +497,39 @@ transform:translateY(0);
     }
 
     .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
-    }
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    align-items:center;
+
+}
 
     .btn,
     .btn-outline{
         width:100%;
         max-width:280px;
         text-align:center;
+    }
+
+}
+@media(max-width:768px){
+
+    .hero-content{
+        width:100%;
+        padding:25px;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+        line-height:1.5;
+    }
+
+    .hero-content p{
+        font-size:18px;
     }
 
 }
