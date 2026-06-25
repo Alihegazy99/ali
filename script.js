@@ -3,6 +3,13 @@ const navbar = document.getElementById('navbar');
 
 menuBtn.addEventListener('click', () => {
     navbar.classList.toggle('active');
+    const navLinks = document.querySelectorAll('#navbar a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+    });
+});
 });
 const hiddenElements =
 document.querySelectorAll('.hidden');
